@@ -3,7 +3,7 @@
 		<aside :class="[isHide?'show':'hide', 'aside']">
 		</aside>
 		<section class="section">
-			<ripple></ripple>
+    	<router-view/>
 		</section>
 	</div>
 </template>
@@ -47,7 +47,6 @@
 		}
 		.section {
 			width: 100%;
-			background: skyblue;
 		}
 	}
 </style>

@@ -1,7 +1,12 @@
 <template>
 	<div class="mainpage">
 		<header class="header">
-			<span class="iconfont icon-category menu" @click="getHide(event)"></span>
+			<span class="iconfont icon-category menu" @click="getHide"></span>
+			<div class="header-menu">
+				<span @click="changePage('/css')">CSS</span>
+				<span @click="changePage('/three')">THREE</span>
+				<span @click="changePage('/phone')">PHONE</span>
+			</div>
 		</header>
 		<div class="section">
     	<router-view/>
@@ -25,8 +30,11 @@
 		},
 		methods: {
 			...mapActions(['setHide']),
-			getHide(event) {
+			getHide() {
 				this.setHide(!this.isHide);
+			},
+			changePage(path) {
+				this.$router.push(path)
 			}
 		}
 	}
@@ -48,10 +56,26 @@
 			position: fixed;
 			top: 0;
 			left: 0;
+			display: flex;
+			z-index: 10;
+			background: #fafafa;
+			&-menu {
+				padding: 0 10px;
+				span {
+					display: inline-block;
+					margin: 0 10px;
+					padding: 0 10px;
+					color: #42b983;
+					cursor: pointer;
+					&:hover {
+						background: rgba(0,0,0,0.2);
+					}
+				}
+			}
 			.menu {
 				display: inline-block;
 				padding: 0 20px;
-				font-size: 25px;
+				font-size: 1.3rem;
 			}
 		}
 		.section {
