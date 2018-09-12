@@ -3,7 +3,6 @@
 		<aside :class="[isHide?'show':'hide', 'aside']">
 		</aside>
 		<section class="section">
-			<ripple></ripple>
 		</section>
 	</div>
 </template>

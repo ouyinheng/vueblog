@@ -2,6 +2,7 @@
 	<div class="mainpage">
 		<header class="header">
 			<span class="iconfont icon-category menu" @click="getHide(event)"></span>
+			<div></div>
 		</header>
 		<div class="section">
     	<router-view/>
