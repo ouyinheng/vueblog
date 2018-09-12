@@ -25,7 +25,7 @@
 		},
 		created() {
 			list.map(item=>{
-				item.image = item.image==null?'/static/images/shenwei.jpg':item.image;
+				item.image = item.image==null?'/static/images/post-bg-2015.jpg':item.image;
 			})
 			this.list = list
 		}

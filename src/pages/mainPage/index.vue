@@ -75,7 +75,7 @@
 		display: flex;
 		height: 100%;
 		.aside {
-			width: 250px;
+			width: 320px;
 			background: white;
 			box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
 			overflow: hidden;
@@ -83,18 +83,19 @@
 				width: 100%;
 				min-height: 200px;
 				height: 30%;
-				max-height: 250px;
+				max-height: 280px;
 				background-color: lightgrey;
-				background-image: url('/static/images/shenwei.jpg');
-				background-position: center;
+				background-image: url('/static/images/424211.jpg');
 				background-size: auto;
+				background-position: -600px -110px;
 				background-repeat: no-repeat;
 				filter: invert(35%);
 				transition: all .5s;
 				cursor: pointer;
 				&:hover {
 					transition: all .5s;
-					background-position: bottom;
+					background-position: -600px -10px;
+					// background-size: cover;
 					filter: invert(10%);
 				}
 			}
@@ -124,7 +125,7 @@
 			}
 		}
 		.show {
-			width: 300px;
+			width: 320px;
 			transition: all .5s;
 		}
 		.hide {
@@ -150,7 +151,7 @@
 			.vh {
 				transform: rotate(90deg);
 				transition: all .5s;
-				left: 250px;
+				left: 300px;
 			}
 			.wh {
 				transition: all .5s;
