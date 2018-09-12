@@ -140,7 +140,7 @@
 			overflow-y: auto;
 			.menu {
 				display: inline-block;
-				position: absolute;
+				position: fixed;
 				top: 50px;
 				left: 20px;
 				padding: 10px;
@@ -150,6 +150,7 @@
 			.vh {
 				transform: rotate(90deg);
 				transition: all .5s;
+				left: 250px;
 			}
 			.wh {
 				transition: all .5s;

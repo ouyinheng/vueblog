@@ -3,6 +3,8 @@ import cssPage from './css'
 import threePage from './three'
 import phonePage from './phone'
 import CssRoutes from '@/pages/css/routes.js'
+import HomeRoutes from '@/pages/home/routes.js'
+
 const Routes = [{
     path: '/',
     name: 'homePage',
@@ -23,6 +25,7 @@ const Routes = [{
     path: '/phone',
     name: 'phonePage',
     component: phonePage 
-}]
+  },
+  ...HomeRoutes]
 
 export default Routes
