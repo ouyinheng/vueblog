@@ -1,15 +1,11 @@
 <template>
 	<div class="home">
-		<aside :class="[isHide?'show':'hide', 'aside']">
-		</aside>
-		<section class="section">
-		</section>
+		home
 	</div>
 </template>
 
 <script>
 	import ripple from '@/components/ripple'
-	import { mapActions, mapState } from 'vuex'
 	export default {
 		name: 'home',
 		data(){
@@ -20,34 +16,20 @@
 		components: {
 			ripple
 		},
-		computed: {
-		    ...mapState({
-		      isHide: state => state.home.isHide
-		    })
+		methods: {
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 	.home {
-		display: flex;
-		height: 100%;
-		.aside {
-			width: 250px;
-			background: lightgreen;
-		}
-		.show {
-			width: 300px;
-			transition: all .5s;
-		}
-		.hide {
-			width: 0;
-			transition: all .5s;
-		}
-		.section {
-			width: 100%;
-			background: skyblue;
-		}
+		width: 90%;
+		max-width: 900px;
+		margin: 50px auto 0;
+		background: white;
+		box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
+		font-size: 0.8rem;
+		padding: 10px;
 	}
 </style>
 	
