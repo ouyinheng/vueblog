@@ -63,7 +63,9 @@ export default {
       }
       function animation(){
           render();
-          controls.update();
+          if(window.screen.width <= 800){
+            controls.update();
+          }
           requestAnimationFrame(animation)
       }
     },
