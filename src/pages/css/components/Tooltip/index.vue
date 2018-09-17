@@ -32,6 +32,7 @@ export default {
         text-align: center;
         line-height: 30px;
         font-size: 0.8rem;
+        cursor: pointer;
       }
     }
   }

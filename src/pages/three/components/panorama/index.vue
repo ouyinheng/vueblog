@@ -45,7 +45,13 @@ export default {
       sphere.position.set(0,0,0);
       sphere.scale.set(10,10,10);
       render();
+      window.addEventListener("resize",onWindowResize,false)
       animation();
+      function onWindowResize(){
+          camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize( window.innerWidth, window.innerHeight );
+      }
       function render(){
           renderer.render(scene,camera);
       }
