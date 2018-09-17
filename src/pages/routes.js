@@ -9,23 +9,29 @@ const Routes = [{
     path: '/',
     name: 'homePage',
     component: homePage,
-    children:[]
   },{
     path: '/css',
     name: 'cssPage',
     component: cssPage,
-    children:[,
-      ...CssRoutes
-    ]
+    meta: {
+      title: 'css'
+    }
   },{
     path: '/three',
     name: 'threePage',
-    component: threePage 
+    component: threePage,
+    meta: {
+      title: 'three'
+    } 
   },{
     path: '/phone',
     name: 'phonePage',
-    component: phonePage 
+    component: phonePage,
+    meta: {
+      title: 'phone'
+    } 
   },
+  ...CssRoutes,
   ...HomeRoutes]
 
 export default Routes

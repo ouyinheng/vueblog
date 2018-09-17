@@ -1,13 +1,13 @@
 <template>
 	<div class="home">
-		<div class="card" v-for="(item,index) in list" :key="index" @click="changepages(item.url)" :style="{backgroundImage: 'url(' + item.image + ')', backgroundSize:'auto'}">{{item.title}}</div>
+		<card :list="list">
+
+		</card>
 	</div>
 </template>
 <script>
-// 
-
 	import list from './list.js'
-	import ripple from '@/components/ripple'
+	import card from '@/components/card'
 	export default {
 		name: 'home',
 		data(){
@@ -16,7 +16,7 @@
 			}
 		},
 		components: {
-			ripple
+			card
 		},
 		methods: {
 			changepages(path) {
@@ -35,20 +35,6 @@
 <style lang="scss" scoped>
 	.home {
 		 width: 100%;
-		 .card {
-			width: 90%;
-			max-width: 900px;
-			min-height: 300px;
-			margin: 50px auto 0;
-			background-color: white;
-			background-position: center;
-			background-size: 100%;
-			box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
-			font-size: 0.8rem;
-			padding: 10px;
-			color: white;
-			font-size: 1rem;
-		}
 	}
 </style>
 	

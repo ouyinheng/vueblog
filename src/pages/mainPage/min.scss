@@ -1,0 +1,59 @@
+@media screen and (max-width: 800px) {
+  .mainpage {
+    display: flex;
+    height: 100%;
+    .aside {
+      display: none;
+      li {
+        span {
+          display: none;
+        }
+      }
+    }
+    .show {
+      width: 320px;
+      transition: all .5s;
+    }
+    .hide {
+      width: 0;
+      transition: all .5s;
+    }
+    .section {
+      box-sizing: border-box;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 50px 0;
+      overflow-y: auto;
+      .menu {
+        display: none;
+      }
+      .menu2 {
+        display: inline-block;
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        background-color:var(--md-theme-demo-light-accent,#ff5252);
+        border-radius: 50%;
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+        z-index: 20;
+        bottom: 50px;
+        right: 20px;
+        padding: 10px;
+        font-size: 1.2rem;
+        z-index: 10;
+        cursor: pointer;
+      }
+      .vh {
+        transform: rotate(90deg);
+        transition: all .5s;
+      }
+      .wh {
+        transition: all .5s;
+      }
+    }
+  }
+}

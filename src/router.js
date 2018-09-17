@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import MainPage from '@/pages/mainPage'
 import PagesRoutes from '@/pages/routes.js'
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -17,3 +16,4 @@ export default new Router({
     }
   ]
 })
+

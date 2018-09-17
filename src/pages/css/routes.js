@@ -1,9 +1,12 @@
-import test from './test'
+import Tooltip from './components/Tooltip'
 
 const Routes = [{
-    path: '/test',
-    name: 'test',
-    component: test
+    path: '/Tooltip',
+    name: 'Tooltip',
+    component: Tooltip,
+    meta: {
+        title: 'Tooltip'
+    }
 }]
 
 export default Routes
