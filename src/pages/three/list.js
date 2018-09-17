@@ -1,7 +1,7 @@
 const list = [{
-    url:'/hometest',
-    title:'asdf',
-    intro: 'asdf',
+    url:'/panorama',
+    title:'panorama',
+    intro: 'panorama',
     image: '/static/images/679A459AA71A089EA008819F9C099BEA.jpg'
 },{
     url:'asdf',
