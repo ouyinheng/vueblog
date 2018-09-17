@@ -77,6 +77,7 @@ export default {
 .panorama {
   width: 100%;
   .card {
+    box-sizing: border-box;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
