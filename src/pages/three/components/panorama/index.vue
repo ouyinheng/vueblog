@@ -38,6 +38,12 @@ export default {
 
       var texture = new THREE.TextureLoader().load(url);
       var geometry =  new THREE.SphereGeometry(10,100,100);
+      if(window.screen.width <= 800){
+        var controls = new THREE.DeviceOrientationControls( camera );
+      } else {
+        var control = new THREE.OrbitControls(camera,one);
+        control.addEventListener("change",render)
+      }
 
       var sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xF2F2F2,map:texture,side:THREE.BackSide});
       var sphere = new THREE.Mesh( geometry, sphereMaterial );
@@ -57,10 +63,9 @@ export default {
       }
       function animation(){
           render();
+          controls.update();
           requestAnimationFrame(animation)
       }
-      var control = new THREE.OrbitControls(camera,one);
-      control.addEventListener("change",render)
     },
     change(){
       this.full = false
