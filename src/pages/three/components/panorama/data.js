@@ -1,9 +1,14 @@
 const data = [{
-  url: '/static/images/three/2294472375_24a3b8ef46_o.jpg'
-},{
   url: '/static/images/three/img.jpg'
 },{
   url: '/static/images/three/img1.jpg'
+},{
+  url: '/static/images/three/dandelion.jpg'
+},{
+  url: '/static/images/three/gugong.jpg'
+},{
+  url: '/static/images/three/yinghua.jpg'
+},{
+  url: '/static/images/three/jigaung.jpg'
 }]
-
 export default data
