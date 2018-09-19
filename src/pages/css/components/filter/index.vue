@@ -1,5 +1,5 @@
 <template>
-  <div class="filter">
+  <div class="filters">
     <image-filter :list="list"></image-filter>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import imageFilter from '@/components/ImageFilter';
 import data from './data.js';
 export default {
-  name: 'filter',
+  name: 'filters',
   components: {
     imageFilter
   },
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .filter {
+  .filters {
     .img {
     }
   }

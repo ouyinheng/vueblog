@@ -14,6 +14,19 @@
 import data from './data.js';
 export default {
   name: 'panorama',
+  beforeRouteLeave(to, from, next) {
+    if(this.full){
+      this.full = false;
+      this.$router.push({
+        path: 'three'
+      })
+      this.$router.push({
+        path: 'panorama'
+      })
+    } else {
+      next()
+    }
+  },
   data(){
     return {
       full: false,
@@ -85,12 +98,12 @@ export default {
   width: 100%;
   .card {
     box-sizing: border-box;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
     font-size: 0.8rem;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     img {
       width: 100%;
       height: 300px;
@@ -105,17 +118,28 @@ export default {
     background: gainsboro;
     top: 0;
     left: 0;
-    transition: all .5s;
+    animation: canvas .5s;
+    animation-fill-mode: forwards;
   }
   .hide-dialog {
     position: fixed;
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     background: gainsboro;
     top: 0;
     left: 0;
-    transition: all .5s;
+    display: none;
+  }
+  @keyframes canvas {
+    from {
+      opacity: 0;
+      display: none;
+    }
+    to {
+      opacity: 1;
+      display: block;
+    }
   }
   .close {
     display: inline-block;
