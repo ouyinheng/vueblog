@@ -105,13 +105,11 @@
         background-color:var(--md-theme-demo-light-accent,#ff5252);
         border-radius: 50%;
         box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-        z-index: 20;
         bottom: 50px;
         right: 20px;
         padding: 10px;
         font-size: 1.2rem;
         z-index: 10;
-        cursor: pointer;
       }
       .vh {
         transform: rotate(90deg);

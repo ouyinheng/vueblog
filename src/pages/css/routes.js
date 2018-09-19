@@ -1,4 +1,5 @@
 import Tooltip from './components/Tooltip'
+import Filter from './components/filter'
 
 const Routes = [{
     path: '/Tooltip',
@@ -6,6 +7,13 @@ const Routes = [{
     component: Tooltip,
     meta: {
         title: 'Tooltip'
+    }
+}, {
+    path: '/filter',
+    name: 'Filter',
+    component: Filter,
+    meta: {
+        title: 'ImageFilter'
     }
 }]
 

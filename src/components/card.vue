@@ -33,7 +33,8 @@
 			margin: 50px auto 50px;
 			background-color: white;
 			background-position: center;
-			background-size: 100%;
+			background-size: cover!important;
+			background-repeat: no-repeat;
 			box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
 			font-size: 0.8rem;
 			padding: 10px;
